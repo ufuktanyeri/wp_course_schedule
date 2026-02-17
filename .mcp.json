@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/claude-code-filesystem", "C:\\Program Files", "C:\\Program Files (x86)", "D:\\Program Files"]
+    }
+  }
+}
