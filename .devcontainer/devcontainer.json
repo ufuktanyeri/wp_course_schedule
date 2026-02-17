@@ -1,0 +1,30 @@
+{
+  "name": "WP Course Schedule",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "ecmel.vscode-html-css",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "liveServer.settings.port": 5500,
+        "liveServer.settings.root": "/workspaces/wp_course_schedule",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.encoding": "utf8"
+      }
+    }
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "echo 'WP Course Schedule dev container is ready!'",
+  "remoteUser": "vscode"
+}

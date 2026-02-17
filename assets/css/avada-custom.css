@@ -1,0 +1,95 @@
+/* ============================================
+   DERS PROGRAMI TABLOLARI
+   Avada > Theme Options > Custom CSS
+   ============================================ */
+
+.dp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.dp-table thead th {
+    background: #334155;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.dp-table thead th:first-child { width: 130px; }
+.dp-table thead th:nth-child(2) { width: 120px; }
+
+.dp-table tbody tr { border-bottom: 1px solid #e2e8f0; }
+.dp-table tbody tr:last-child { border-bottom: none; }
+.dp-table tbody tr:nth-child(even) { background: #f8fafc; }
+
+.dp-table tbody td {
+    padding: 9px 14px;
+    vertical-align: middle;
+    color: #334155;
+}
+
+.dp-table tbody td:first-child {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.dp-table tbody td:nth-child(2) { color: #64748b; font-size: 13px; }
+.dp-table tbody td:nth-child(3) { font-weight: 600; color: #1e293b; }
+
+.dp-table-wrap {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.dp-day { margin-bottom: 18px; }
+
+.dp-day-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin: 0 0 6px 0;
+    padding: 7px 12px;
+    background: #f1f5f9;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+.dp-break {
+    text-align: center;
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 0;
+    background: #f1f5f9;
+}
+
+.dp-empty {
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.dp-merged {
+    border-left: 3px solid #3b82f6;
+    background: #eff6ff;
+}
+
+@media (max-width: 600px) {
+    .dp-table { font-size: 12px; }
+    .dp-table thead th, .dp-table tbody td { padding: 7px 8px; }
+    .dp-table thead th:first-child { width: 90px; }
+}
